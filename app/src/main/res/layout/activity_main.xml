@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#FFFF00">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculator"
+        android:textSize="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="#F08080"/>
+
+    <EditText
+        android:id="@+id/angka"
+        android:hint="Masukkan Angka"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    <Button
+        android:id="@+id/sin"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="SIN"
+        android:textSize="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFA07A"/>
+
+    <Button
+        android:id="@+id/cos"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="COS"
+        android:textSize="30dp"
+        android:layout_toRightOf="@+id/sin"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="#FFA07A"
+        />
+
+    <Button
+        android:id="@+id/tan"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="TAN"
+        android:textSize="30dp"
+        android:layout_toRightOf="@+id/cos"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="#FFA07A"/>
+
+
+    <Button
+        android:id="@+id/csc"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="CSC"
+        android:textSize="30dp"
+        android:layout_below="@+id/sin"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:background="#FFA07A"/>
+
+    <Button
+        android:id="@+id/sec"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="SEC"
+        android:textSize="30dp"
+        android:layout_toRightOf="@+id/csc"
+        android:layout_below="@+id/cos"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="#FFA07A"/>
+
+    <Button
+         android:id="@+id/cot"
+         android:layout_width="100dp"
+         android:layout_height="wrap_content"
+         android:hint="COT"
+         android:textSize="30dp"
+         android:layout_toRightOf="@+id/sec"
+         android:layout_below="@+id/tan"
+         android:layout_marginTop="20dp"
+         android:layout_marginLeft="20dp"
+         android:background="#FFA07A"/>
+
+   <Button
+       android:id="@+id/log"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="LOGARITMA"
+       android:textSize="30dp"
+       android:layout_below="@+id/csc"
+       android:layout_marginTop="20dp"
+       android:layout_marginBottom="20dp"
+       android:background="#FFA07A"
+       android:layout_marginLeft="30dp"
+       android:layout_marginRight="20dp"/>
+
+   <TextView
+       android:id="@+id/hsl"
+       android:text="0.0"
+       android:textSize="30dp"
+       android:textAlignment="center"
+       android:layout_below="@+id/log"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="#FA8072"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
